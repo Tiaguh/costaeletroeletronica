@@ -1,0 +1,33 @@
+.footer-container {
+    width: 100vw;
+    height: 30vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #D9D9D9;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.meios-de-contato-container {
+    width: 50vw;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.meios-de-contato {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.texto-container {
+    width: 50vw;
+}
