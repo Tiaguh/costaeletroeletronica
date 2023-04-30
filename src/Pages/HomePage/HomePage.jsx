@@ -3,6 +3,8 @@ import "./HomePage.css"
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
 
+import { Link } from 'react-router-dom';
+
 export default function HomePage() {
     return (
         <div>
@@ -14,12 +16,12 @@ export default function HomePage() {
                     <p>Foto Pessoal</p>
                 </div>
 
-                {/* <div>
-                    <p>Nome</p>
-                    <p>Idade</p>
-                    <p>Profissões</p>
-                </div> */}
-                
+                <div>
+                    <p>Nome: </p>
+                    <p>Idade: </p>
+                    <p>Profissões: </p>
+                </div>
+
             </div>
 
             <div className="button-container">
@@ -34,13 +36,19 @@ export default function HomePage() {
                 </div>
 
                 <div className="buttons-container">
-                    <button className="button-type-2">
-                        <p>Baixar Curriculo</p>
-                    </button>
+                    <Link
+                        className="button-type-2"
+                        to={"/manutenção-orgãos"}
+                    >
+                        <p>Manutenção Órgãos</p>
+                    </Link>
 
-                    <button className="button-type-2">
-                        <p>Baixar Curriculo</p>
-                    </button>
+                    <Link
+                        className="button-type-2"
+                        to={"/manutenção-elétrica"}
+                    >
+                        <p>Manutenção Elétrica</p>
+                    </Link>
                 </div>
             </div>
 

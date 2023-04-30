@@ -8,8 +8,8 @@
 
     background-color: #D9D9D9;
 
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .meios-de-contato-container {
@@ -30,4 +30,8 @@
 
 .texto-container {
     width: 50vw;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
