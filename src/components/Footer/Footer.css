@@ -1,12 +1,12 @@
 .footer-container {
     width: 100vw;
-    height: 30vh;
+    height: 50vh;
 
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    background-color: #D9D9D9;
+    background-color: #000;
 
     padding-left: 30px;
     padding-right: 30px;
@@ -21,11 +21,47 @@
     gap: 15px;
 }
 
+.meios-de-contato-container h1 {
+    color: #FFF;
+}
+
 .meios-de-contato {
     display: flex;
     flex-direction: column;
+}
 
-    gap: 15px;
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.info-container h3 {
+    font-family: sans-serif;
+    color: #A8AAF8;
+}
+
+.info-container p {
+    font-family: sans-serif;
+    color: #FFF;
+}
+
+.instagram-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 5px;
+}
+
+.instagram-container p{
+    color: #FFF;
+}
+
+.instagram-icon{
+    width: 50px;
 }
 
 .texto-container {
@@ -34,4 +70,9 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-direction: column;
+
+    gap: 25px;
+
+    color: #FFF;
 }

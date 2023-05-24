@@ -1,7 +1,14 @@
 import React from "react"
 import "./HomePage.css"
+
+import Foto from "./img/foto.png"
+import Orgao from "./img/orgão.jpg"
+import Fios from "./img/fios.jpg"
+
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
+
+import { RiFileDownloadLine } from "react-icons/ri";
 
 import { Link } from 'react-router-dom';
 
@@ -13,41 +20,47 @@ export default function HomePage() {
             <div className="infos">
 
                 <div className="foto-container">
-                    <p>Foto Pessoal</p>
+                    <img className="foto" src={Foto} />
                 </div>
 
-                <div>
-                    <p>Nome: </p>
-                    <p>Idade: </p>
-                    <p>Profissões: </p>
+                <div className="info">
+                    <h3>Seja bem vindo(a)</h3>
+                    <h1>Claudemir Ferreira da Costa</h1>
+                    <h2>43 anos</h2>
+                    <p>Professor, Eletricista e Técnico em Eletrônica (Órgãos)</p>
+                    <p>Formado em eletrônica e elétrica pelo SENAI</p>
+
+                    <button className="button-type-1">
+                        <RiFileDownloadLine size={26} color={"#131673"} />
+                        <p>Certificações</p>
+                    </button>
+
                 </div>
 
             </div>
 
-            <div className="button-container">
-                <button className="button-type-1">
-                    <p>Baixar Curriculo</p>
-                </button>
-            </div>
 
             <div className="servicos-container">
-                <div>
+                <div className="servicos-title" >
                     <h1>Serviços</h1>
                 </div>
 
-                <div className="buttons-container">
+                <div className="fotos-container">
                     <Link
-                        className="button-type-2"
+                        className="orgao-container"
                         to={"/manutenção-orgãos"}
                     >
-                        <p>Manutenção Órgãos</p>
+                        <img className="foto-orgao" src={Orgao} />
+                        <p>Manutenção Orgãos</p>
                     </Link>
 
                     <Link
-                        className="button-type-2"
+                        className="fios-container"
                         to={"/manutenção-elétrica"}
                     >
+                        <img className="foto-fios" src={Fios} />
                         <p>Manutenção Elétrica</p>
+                        
                     </Link>
                 </div>
             </div>

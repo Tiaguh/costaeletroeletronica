@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header className="cabecalho">
             <div>
-                <h1>Claudemir</h1>
+                <h1>Costa Elétrica e Eletrônica</h1>
             </div>
 
             <div className="cabecalho-itens" >
@@ -15,7 +15,7 @@ export default function Header() {
                 <p>|</p>
                 <p>Orgãos</p>
                 <p>|</p>
-                <p>Exotica?</p>
+                <p>Elétrica?</p>
             </div>
         </header>
     )

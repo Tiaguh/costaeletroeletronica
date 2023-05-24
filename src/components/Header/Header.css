@@ -6,14 +6,22 @@
     justify-content: space-between;
     align-items: center;
 
-    background-color: #D9D9D9;
+    background-color: #131673;
 
     padding-left: 30px;
     padding-right: 30px;
+}
+
+.cabecalho h1{
+    color: #FFF;
 }
 
 .cabecalho-itens{
     display: flex;
     flex-direction: row;
     gap: 15px;
+}
+
+.cabecalho-itens p{
+    color: #FFF;
 }
