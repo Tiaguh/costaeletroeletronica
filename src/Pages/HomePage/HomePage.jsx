@@ -1,9 +1,9 @@
 import React from "react"
 import "./HomePage.css"
 
-import Foto from "./img/foto.png"
-import Orgao from "./img/orgão.jpg"
-import Fios from "./img/fios.jpg"
+import Foto from "./img/Foto.svg"
+import Orgao from "./img/organ.svg"
+import Fios from "./img/fios.svg"
 
 import Header from "../../components/Header/Header"
 import Footer from "../../components/Footer/Footer"
@@ -46,22 +46,19 @@ export default function HomePage() {
                 </div>
 
                 <div className="fotos-container">
+
                     <Link
-                        className="orgao-container"
                         to={"/manutenção-orgãos"}
                     >
                         <img className="foto-orgao" src={Orgao} />
-                        <p>Manutenção Orgãos</p>
                     </Link>
 
                     <Link
-                        className="fios-container"
                         to={"/manutenção-elétrica"}
                     >
                         <img className="foto-fios" src={Fios} />
-                        <p>Manutenção Elétrica</p>
-                        
                     </Link>
+
                 </div>
             </div>
 

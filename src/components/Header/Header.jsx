@@ -15,7 +15,7 @@ export default function Header() {
                 <p>|</p>
                 <p>Orgãos</p>
                 <p>|</p>
-                <p>Elétrica?</p>
+                <p>Elétrica</p>
             </div>
         </header>
     )
