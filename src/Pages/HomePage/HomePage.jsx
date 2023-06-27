@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 export default function HomePage() {
     return (
         <div>
-            <Header />
+            <Header />  
 
             <div className="infos">
 
@@ -24,6 +24,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="info">
+                    
                     <h3>Seja bem vindo(a)</h3>
                     <h1>Claudemir Ferreira da Costa</h1>
                     <h2>43 anos</h2>

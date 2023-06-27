@@ -1,6 +1,6 @@
 .footer-container {
     width: 100vw;
-    height: 50vh;
+    height: 55vh;
 
     display: flex;
     flex-direction: row;
@@ -8,8 +8,8 @@
 
     background-color: #000;
 
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .meios-de-contato-container {
@@ -40,11 +40,13 @@
 
 .info-container h3 {
     font-family: sans-serif;
+    font-size: 22px;
     color: #A8AAF8;
 }
 
 .info-container p {
     font-family: sans-serif;
+    font-size: 22px;
     color: #FFF;
 }
 
@@ -57,6 +59,8 @@
 }
 
 .instagram-container p{
+    font-family: sans-serif;
+    font-size: 22px;
     color: #FFF;
 }
 
@@ -73,6 +77,10 @@
     flex-direction: column;
 
     gap: 25px;
+}
 
+.texto-container p {
+    font-family: sans-serif;
+    font-size: 22px;
     color: #FFF;
 }
