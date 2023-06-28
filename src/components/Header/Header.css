@@ -1,4 +1,4 @@
-.cabecalho{
+.cabecalho {
     width: 100%;
     height: 64px;
 
@@ -12,21 +12,108 @@
     padding-right: 50px;
 }
 
-.cabecalho h1{
+.cabecalho-responsive {
+    display: none;
+}
+
+.cabecalho h1 {
     color: #FFF;
     font-size: 30px;
     font-weight: 0;
 }
 
-.cabecalho-itens{
+.cabecalho-itens {
     display: flex;
     flex-direction: row;
     gap: 22px;
 }
 
-.cabecalho-itens p{
+.cabecalho-itens p {
     color: #FFF;
 
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 17px;
+}
+
+@media (max-width: 890px) {
+    .cabecalho {
+        display: none;
+    }
+
+    .cabecalho-responsive {
+        width: 100%;
+        height: 64px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        background-color: #131673;
+
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .cabecalho-responsive h1 {
+        color: #FFF;
+        font-size: 30px;
+        font-weight: 0;
+    }
+
+    .cabecalho-responsive button {
+        background-color: transparent;
+
+        border: none;
+    }
+
+    .navbar-activated {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        position: absolute;
+
+        right: 10px;
+
+        margin-top: 1px;
+
+        width: 120px;
+        height: 160px;
+
+        background-color: #131673;
+    }
+
+    .navbar-activated p {
+        color: #FFF;
+        font-family: 'PT Sans', sans-serif;
+        font-size: 20px;
+    }
+
+    .navbar-not-activated {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .cabecalho-responsive {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .cabecalho-responsive {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .cabecalho-responsive h1 {
+        color: #FFF;
+        font-size: 22px;
+        font-weight: 0;
+    }
 }

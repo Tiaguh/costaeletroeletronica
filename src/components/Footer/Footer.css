@@ -1,15 +1,25 @@
 .footer-container {
     width: 100vw;
-    height: 55vh;
+    height: 60vh;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
 
     background-color: #000;
 
     padding-left: 100px;
     padding-right: 100px;
+}
+
+.footer-content {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
 }
 
 .meios-de-contato-container {
@@ -39,18 +49,18 @@
 }
 
 .info-container h3 {
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     color: #A8AAF8;
 }
 
 .info-container p {
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     color: #FFF;
 }
 
-.instagram-container{
+.instagram-container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -58,13 +68,13 @@
     gap: 5px;
 }
 
-.instagram-container p{
-    font-family: sans-serif;
+.instagram-container p {
+    font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     color: #FFF;
 }
 
-.instagram-icon{
+.instagram-icon {
     width: 50px;
 }
 
@@ -80,7 +90,74 @@
 }
 
 .texto-container p {
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 22px;
     color: #FFF;
+}
+
+.direitos {
+    margin-top: 35px;
+}
+
+.direitos p {
+    font-family: 'PT Sans', sans-serif;
+    color: #B8B8B8;
+}
+
+@media (max-width: 890px) {
+    .footer-container {
+        height: 75vh;
+
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media (max-width: 720px) {
+    .footer-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@media (max-width: 620px) {
+    .footer-container {
+        height: 140vh;
+
+        display: flex;
+
+        background-color: #000;
+    }
+
+    .footer-content {
+        width: 100%;
+
+        flex-direction: column;
+
+        margin-top: 60px;
+    }
+
+    .meios-de-contato-container {
+        width: 100vw;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        overflow-y: hidden;
+    }
+
+    .texto-container {
+        width: 100vw;
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 320px) {
+    .footer-container {
+        height: 150vh;
+    }
 }
