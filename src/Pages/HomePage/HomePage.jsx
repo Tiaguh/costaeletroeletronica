@@ -1,5 +1,5 @@
-import React from "react"
-import "./HomePage.css"
+import React, { useState } from "react"
+import "./HomePage.css";
 
 import Foto from "./img/Foto.svg"
 import Orgao from "./img/organ.svg"
@@ -16,6 +16,8 @@ import { RiFileDownloadLine } from "react-icons/ri";
 import { Link } from 'react-router-dom';
 
 export default function HomePage() {
+    const [hover, setHover] = useState(false)
+
     return (
         <div>
             <Header />
@@ -34,9 +36,32 @@ export default function HomePage() {
                     <p>Professor, Eletricista e Técnico em Eletrônica (Órgãos)</p>
                     <p>Formado em eletrônica e elétrica pelo SENAI</p>
 
-                    <button className="button-type-1">
-                        <RiFileDownloadLine size={26} color="#131673" />
-                        <p>Certificações</p>
+                    <button
+                        onMouseEnter={() => setHover(true)}
+                        onMouseLeave={() => setHover(false)}
+
+                        className={hover ? "button-type-1-hover" : "button-type-1" }
+                    >
+
+                        {hover ?
+
+                            (
+                                <>
+                                    <RiFileDownloadLine size={26} color="#FFF" />
+                                    <p>Baixar currículo</p>
+                                </>
+                            )
+
+                            :
+
+                            (
+                                <>
+                                    <RiFileDownloadLine size={26} color="#131673" />
+                                    <p>Certificações</p>
+                                </>
+                            )
+                        }
+
                     </button>
 
                 </div>
@@ -53,12 +78,17 @@ export default function HomePage() {
                         <p>Certificações</p>
                     </button>
 
+                    {/* onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} */}
+
                 </div>
 
             </div>
 
 
-            <div className="servicos-container">
+            <div
+                className="servicos-container"
+                id="services"
+            >
                 <div className="servicos-title" >
                     <h1>Serviços</h1>
                 </div>
@@ -100,7 +130,7 @@ export default function HomePage() {
                     </Link>
 
                 </div>
-                
+
             </div>
 
             <Footer />

@@ -45,6 +45,31 @@
     font-size: 18px;
 }
 
+.button-type-1-hover {
+    width: 220px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    gap: 10px;
+
+    border-radius: 5px;
+
+    border: none;
+
+    background-color: #131673;
+}
+
+.button-type-1-hover p {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+
+    color: #FFF;
+}
+
 .info {
     display: flex;
     flex-direction: column;

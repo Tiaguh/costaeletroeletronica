@@ -64,6 +64,9 @@
 .instagram-container {
     display: flex;
     flex-direction: row;
+    align-items: center;
+
+    margin-left: -6px;
 
     gap: 5px;
 }
@@ -155,6 +158,13 @@
 }
 
 @media (max-width: 320px) {
+    .instagram-container {
+        display: flex;
+        flex-direction: row;
+
+        gap: 5px;
+    }
+
     .instagram-container p {
         font-size: 21px;
     }

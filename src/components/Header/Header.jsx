@@ -1,25 +1,67 @@
 import React, { useState } from "react"
 import "./Header.css"
 
-import navbar from './img/navbar.png'
+import { Link } from "react-router-dom";
+
+import navbar from './img/navbar.png';
 
 export default function Header() {
     const [visible, setVisible] = useState(false)
+
+    const scrollToServices = () => {
+        const section = document.getElementById('services');
+        section.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const scrollToFooter = () => {
+        const section = document.getElementById('footer');
+        section.scrollIntoView({ behavior: 'smooth' });
+    };
 
     return (
         <div className="cabecalho-container">
 
             <header className="cabecalho">
-                <h1>Costa Elétrica e Eletrônica</h1>
+                <Link
+                    to="/"
+                    className="link"
+                >
+                    <h1>Costa Elétrica e Eletrônica</h1>
+                </Link>
 
                 <div className="cabecalho-itens" >
-                    <p>Serviços</p>
+                    <Link
+                        className="link"
+                        onClick={() => scrollToServices()}
+                    >
+                        Serviços
+                    </Link>
+
                     <p>|</p>
-                    <p>Contato</p>
+
+                    <Link
+                        className="link"
+                        onClick={() => scrollToFooter()}
+                    >Contato
+                    </Link>
+
                     <p>|</p>
-                    <p>Orgãos</p>
+
+                    <Link
+                        className="link"
+                        to="/manutenção-orgãos"
+                    >
+                        Orgãos
+                    </Link>
+
                     <p>|</p>
-                    <p>Elétrica</p>
+
+                    <Link
+                        to="/manutenção-elétrica"
+                        className="link"
+                    >
+                        Elétrica
+                    </Link>
                 </div>
             </header>
 

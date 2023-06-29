@@ -5,7 +5,10 @@ import Instagram from "./img/instagram-icon.png"
 
 export default function Footer() {
     return (
-        <div className="footer-container">
+        <div
+            className="footer-container"
+            id="footer"
+        >
 
             <div className="footer-content">
 
