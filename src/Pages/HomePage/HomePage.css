@@ -61,6 +61,8 @@
     border: none;
 
     background-color: #131673;
+
+    cursor: pointer;
 }
 
 .button-type-1-hover p {

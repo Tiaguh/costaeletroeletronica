@@ -15,7 +15,9 @@ import TOKAITX5 from './img/TOKAI TX-5.png';
 import TOKAITP88C from './img/TOKAI TP-88C.jpg';
 import TOKAITP88S from './img/TOKAI TP-88S.png';
 import TOKAITP188M from './img/TOKAI TP-188M.jpg';
-import TOKAITP188V from './img/TOKAI TP-188V.png'
+import TOKAITP188V from './img/TOKAI TP-188V.png';
+
+import SchiefferMR350 from './img/Schieffer MR-350.png';
 
 export default function ManutencaoOrgaos() {
     return (
@@ -44,71 +46,108 @@ export default function ManutencaoOrgaos() {
                 </div>
 
                 <div className="title-container">
-                    <h1>Conhecimento em orgãos Tokai:</h1>
+                    <h1>Conhecimento em orgãos Tokai</h1>
                 </div>
 
                 <div className="orgao-container">
 
                     <div className="orgao">
-                        <img src={TokaiMd750} />
+                        <div className="orgao-img-container">
+                            <img src={TokaiMd750} />
+                        </div>
                         <p>TOKAI MD-750</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAIT1} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAIT1} />
+                        </div>
                         <p>TOKAI T-1</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAIT1CONCERT} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAIT1CONCERT} />
+                        </div>
                         <p>TOKAI T-1 CONCERT</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAID2} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAID2} />
+                        </div>
                         <p>TOKAI D-2</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAIMD10} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAIMD10} />
+                        </div>
                         <p>TOKAI MD-10</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAID3} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAID3} />
+                        </div>
                         <p>TOKAI D-3</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAITK100} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAITK100} />
+                        </div>
                         <p>TOKAI TK-100</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAITX5} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAITX5} />
+                        </div>
                         <p>TOKAI TX-5</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAITP88C} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAITP88C} />
+                        </div>
                         <p>TOKAI TP-88C</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAITP88S} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAITP88S} />
+                        </div>
                         <p>TOKAI TP-88S</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAITP188M} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAITP188M} />
+                        </div>
                         <p>TOKAI TP-188M</p>
                     </div>
 
                     <div className="orgao">
-                        <img src={TOKAITP188V} />
+                        <div className="orgao-img-container">
+                            <img src={TOKAITP188V} />
+                        </div>
                         <p>TOKAI TP-188V</p>
                     </div>
 
+                </div>
+
+                <div className="title-container">
+                    <h1>Conhecimento em órgãos Schieffer</h1>
+                </div>
+
+                <div className="orgao-container-isolade">
+                    <div className="orgao">
+                        <div className="orgao-img-container">
+                            <img src={SchiefferMR350} />
+                        </div>
+                        <p>TOKAI TP-188V</p>
+                    </div>
                 </div>
 
             </div>

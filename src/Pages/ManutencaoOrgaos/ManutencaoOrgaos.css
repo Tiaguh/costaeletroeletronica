@@ -1,17 +1,6 @@
 .experience-container {
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-.title-container {
-    width: 100%;
-    height: 30vh;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    gap: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .container-all-retangles {
@@ -38,18 +27,15 @@
 }
 
 .rectangles {
-    width: 40%;
-    height: 80px;
-
     display: flex;
     align-items: center;
 
     flex-wrap: wrap;
 
-    padding-left: 15px;
+    padding: 25px;
 
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
 
     background-color: #F1F1F1;
 
@@ -79,8 +65,8 @@
 
     flex-wrap: wrap;
 
-    font-size: 17px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-family: 'PT Sans', sans-serif;
 
     padding-left: 15px;
 
@@ -93,36 +79,53 @@
 
 .orgao-container {
     width: 100%;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-
-    margin-bottom: 50px;
-
-    gap: 25px;
 }
 
-.orgao {
-    width: 230px;
-    height: 250px;
+.orgao-container-isolade {
+    width: 100%;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: flex-start;
+}
 
-    padding: 5px;
-
+.orgao-img-container {
     border-left: 8px solid #131673;
     border-right: 8px solid #D5D5D5;
     border-top: 8px solid #D5D5D5;
     border-bottom: 8px solid #D5D5D5;
 
     border-radius: 10px;
+
+    overflow-y: hidden;
 }
 
-.orgao img{
+.orgao {
+    width: 290px;
+    height: 310px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 10px;
+
+    padding: 5px;
+}
+
+.orgao img {
     width: 200px;
+}
+
+.orgao p {
+    font-family: 'Khand', sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+
+    overflow-y: hidden;
 }
