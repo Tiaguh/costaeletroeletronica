@@ -3,6 +3,18 @@
     padding-right: 50px;
 }
 
+.container-retangles {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    gap: 50px;
+
+    margin-bottom: 15px;
+}
+
 .container-all-retangles {
     width: 100%;
 
@@ -14,12 +26,12 @@
     padding-right: 50px;
 }
 
-.container-retangles {
+.container-retangle {
     width: 100%;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
     gap: 50px;
 
@@ -44,21 +56,8 @@
     border-radius: 5px;
 }
 
-.container-retangle {
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    gap: 50px;
-
-    margin-bottom: 15px;
-}
-
 .rectangle {
     width: 90%;
-    height: 80px;
 
     display: flex;
     align-items: center;
@@ -68,7 +67,7 @@
     font-size: 18px;
     font-family: 'PT Sans', sans-serif;
 
-    padding-left: 15px;
+    padding: 25px;
 
     background-color: #F1F1F1;
 
@@ -128,4 +127,38 @@
     font-weight: 600;
 
     overflow-y: hidden;
+}
+
+@media (max-width: 910px) {
+    .container-all-retangles {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .container-retangles {
+        flex-direction: column;
+        justify-content: center;
+
+        gap: 20px;
+    }
+
+    .container-retangle {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .rectangles {
+        padding: 25px;
+    }
+
+    .rectangle {
+        width: 100%;
+    }
+}
+
+@media (max-width: 910px) {
+    .container-all-retangles {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }

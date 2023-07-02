@@ -75,10 +75,35 @@ export default function Header() {
             </header>
 
             <div className={visible ? "navbar-activated" : "navbar-not-activated"}>
-                <p>Serviços</p>
-                <p>Contato</p>
-                <p>Orgãos</p>
-                <p>Elétrica</p>
+
+                <Link
+                    to="/"
+                    className="link"
+                >
+                    Serviços
+                </Link>
+
+                <Link
+                    to="/"
+                    className="link"
+                >
+                    Contato
+                </Link>
+
+                <Link
+                    to="/manutenção-orgãos"
+                    className="link"
+                >
+                    Orgãos
+                </Link>
+
+                <Link
+                    to="/manutenção-elétrica"
+                    className="link"
+                >
+                    Elétrica
+                </Link>
+
             </div>
 
         </div>
