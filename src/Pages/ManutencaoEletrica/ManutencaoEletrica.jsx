@@ -18,8 +18,8 @@ export default function ManutencaoEletrica() {
 
             <div className="container-eletric-experience">
 
-                {/* <h1>Videos</h1>
-                <Carrousel /> */}
+                <h1>Videos</h1>
+                <Carrousel />
 
                 <div className="title-container">
                     <h1>Manutenção de Elétrica</h1>

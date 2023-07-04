@@ -1,6 +1,6 @@
 import HomePage from "../src/Pages/HomePage/HomePage"
 import ManutencaoOrgaos from "../src/Pages/ManutencaoOrgaos/ManutencaoOrgaos"
-import ManutencaoEletrica from "../src/Pages/ManutencaoEletrica/ManutencaoEletrica"
+import ManutencaoEletrica from '../src/Pages/ManutencaoEletrica/ManutencaoEletrica';
 
 import "./Global.css"
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
