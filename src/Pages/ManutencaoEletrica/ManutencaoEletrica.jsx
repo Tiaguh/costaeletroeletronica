@@ -2,7 +2,8 @@ import React from "react";
 import "./ManutencaoEletrica.css";
 
 import Header from "../../components/Header/Header";
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer';
+import Carrousel from '../../components/Carrousel/Carrousel'
 
 import Lampada from './img/lampadas.png';
 import Led from './img/led.png';
@@ -16,6 +17,9 @@ export default function ManutencaoEletrica() {
             <Header />
 
             <div className="container-eletric-experience">
+
+                {/* <h1>Videos</h1>
+                <Carrousel /> */}
 
                 <div className="title-container">
                     <h1>Manutenção de Elétrica</h1>
