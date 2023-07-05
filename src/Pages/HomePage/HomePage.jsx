@@ -48,7 +48,7 @@ export default function HomePage() {
                             (
                                 <>
                                     <RiFileDownloadLine size={26} color="#FFF" />
-                                    <p>Baixar currículo</p>
+                                    <p>Certificações</p>
                                 </>
                             )
 
@@ -77,8 +77,6 @@ export default function HomePage() {
                         <RiFileDownloadLine size={26} color="#131673" />
                         <p>Certificações</p>
                     </button>
-
-                    {/* onMouseEnter={handleHover} onMouseLeave={handleMouseLeave} */}
 
                 </div>
 

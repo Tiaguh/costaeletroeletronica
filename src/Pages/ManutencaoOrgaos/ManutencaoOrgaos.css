@@ -21,9 +21,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-
-    padding-left: 50px;
-    padding-right: 50px;
 }
 
 .container-retangle {

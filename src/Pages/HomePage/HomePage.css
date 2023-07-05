@@ -30,7 +30,7 @@
     align-items: center;
     flex-direction: row;
 
-    gap: 10px;
+    gap: 8px;
 
     border: 2px #131673 solid;
 
@@ -54,7 +54,7 @@
     align-items: center;
     flex-direction: row;
 
-    gap: 10px;
+    gap: 8px;
 
     border-radius: 5px;
 
@@ -132,13 +132,15 @@
 .servicos-title h1 {
     color: #FFF;
     font-size: 40px;
+
+    margin-top: 25px;
 }
 
 .fotos-container {
     width: 100%;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     margin-top: 50px;

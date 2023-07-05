@@ -37,16 +37,13 @@ export default function ManutencaoOrgaos() {
                     <div className="container-retangles">
                         <div className="rectangles">Atendimento de pedidos de manutenção na Garantia pela Tokai</div>
                         <div className="rectangles">Atendimento fora da Garantia de Órgãos Da Tokai</div>
-                    </div>
-
-                    <div className="container-retangle">
-                        <div className="rectangle">Atendimento de manutenção dos órgãos das Igrejas Congregação Cristã no Brasil de Taboão da Serra, Embu das Artes e Itapecerica da Serra</div>
+                        <div className="rectangles">Atendimento de manutenção dos órgãos das Igrejas Congregação Cristã no Brasil de Taboão da Serra, Embu das Artes e Itapecerica da Serra</div>
                     </div>
 
                 </div>
 
                 <div className="title-container">
-                    <h1>Conhecimento em orgãos Tokai</h1>
+                    <h1>Conhecimento em órgãos Tokai</h1>
                 </div>
 
                 <div className="orgao-container">
@@ -146,7 +143,7 @@ export default function ManutencaoOrgaos() {
                         <div className="orgao-img-container">
                             <img src={SchiefferMR350} />
                         </div>
-                        <p>TOKAI TP-188V</p>
+                        <p>Schieffer MR-350</p>
                     </div>
                 </div>
 

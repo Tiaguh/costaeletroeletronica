@@ -18,9 +18,6 @@ export default function ManutencaoEletrica() {
 
             <div className="container-eletric-experience">
 
-                // <h1>Videos</h1>
-                // <Carrousel />
-
                 <div className="title-container">
                     <h1>Manutenção de Elétrica</h1>
 
@@ -32,12 +29,9 @@ export default function ManutencaoEletrica() {
                     <div className="container-retangles-eletric">
                         <div className="rectangles-eletric">Manutenção elétrica nas academias <br /> Gigants Grin e Aquademia</div>
                         <div className="rectangles-eletric">Manutenção: Colégio Portal Ideal</div>
-                    </div>
-
-                    <div className="container-retangle-eletric">
                         <div className="rectangles-eletric">Instalação elétrica nova e <br /> manutenção particulares em várias regiões</div>
                     </div>
-
+                    
                 </div>
                 
                 <div className="title-container">
