@@ -2,7 +2,8 @@ import React from "react";
 import "./ManutencaoOrgaos.css"
 
 import Header from "../../components/Header/Header";
-import Footer from '../../components/Footer/Footer'
+import Footer from '../../components/Footer/Footer';
+import Carousel from "../../components/Carrousel/Carrousel";
 
 import TokaiMd750 from './img/TOKAI MD-750.jpg';
 import TOKAIT1 from './img/TOKAI T-1.png';
@@ -31,6 +32,8 @@ export default function ManutencaoOrgaos() {
 
                     <h2>Experiências</h2>
                 </div>
+
+                <Carousel />
 
                 <div className="container-all-retangles" >
 
