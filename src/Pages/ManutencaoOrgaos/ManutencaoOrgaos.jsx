@@ -3,7 +3,7 @@ import "./ManutencaoOrgaos.css"
 
 import Header from "../../components/Header/Header";
 import Footer from '../../components/Footer/Footer';
-import Carousel from "../../components/Carrousel/Carrousel";
+import Carousel from "../../components/Carousel/Carousel";
 
 import TokaiMd750 from './img/TOKAI MD-750.jpg';
 import TOKAIT1 from './img/TOKAI T-1.png';

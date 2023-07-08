@@ -3,7 +3,7 @@ import "./ManutencaoEletrica.css";
 
 import Header from "../../components/Header/Header";
 import Footer from '../../components/Footer/Footer';
-import Carrousel from '../../components/Carrousel/Carrousel'
+import Carousel from '../../components/Carousel/Carousel'
 
 import Lampada from './img/lampadas.png';
 import Led from './img/led.png';
