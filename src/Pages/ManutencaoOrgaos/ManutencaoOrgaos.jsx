@@ -3,7 +3,7 @@ import "./ManutencaoOrgaos.css"
 
 import Header from "../../components/Header/Header";
 import Footer from '../../components/Footer/Footer';
-import Carousel from "../../components/Carousel/Carousel";
+import CarouselOrgaos from "../../components/Carousel-Orgaos/Carousel-Orgaos";
 
 import TokaiMd750 from './img/TOKAI MD-750.jpg';
 import TOKAIT1 from './img/TOKAI T-1.png';
@@ -33,7 +33,7 @@ export default function ManutencaoOrgaos() {
                     <h2>Experiências</h2>
                 </div>
 
-                <Carousel />
+                <CarouselOrgaos />
 
                 <div className="container-all-retangles" >
 

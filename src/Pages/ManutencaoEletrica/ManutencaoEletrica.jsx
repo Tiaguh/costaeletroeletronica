@@ -3,7 +3,7 @@ import "./ManutencaoEletrica.css";
 
 import Header from "../../components/Header/Header";
 import Footer from '../../components/Footer/Footer';
-import Carousel from '../../components/Carousel/Carousel'
+import CarouselEletrica from '../../components/Carousel-Eletrica/Carousel-Eletrica'
 
 import Lampada from './img/lampadas.png';
 import Led from './img/led.png';
@@ -23,6 +23,8 @@ export default function ManutencaoEletrica() {
 
                     <h2>Experiências</h2>
                 </div>
+
+                <CarouselEletrica />
 
                 <div className="container-all-retangles-eletric" >
 

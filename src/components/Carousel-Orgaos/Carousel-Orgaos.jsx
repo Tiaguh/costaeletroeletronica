@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import "./Carousel.css";
+import "./Carousel-Orgaos.css";
 import { BiChevronLeft, BiChevronRight, BiPlay, BiPause } from "react-icons/bi";
 
 import video1 from './videos/Video1.mp4';
