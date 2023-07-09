@@ -34,7 +34,7 @@
     position: relative;
 
     overflow-y: hidden;
-  }
+}
 
 .pause-overlay {
     position: absolute;
@@ -45,5 +45,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1;
+}
+
+@media (max-width: 910px) {
+    .carousel button {
+        width: 50px;
+    }
 }

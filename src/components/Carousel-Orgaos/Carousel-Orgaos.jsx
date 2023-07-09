@@ -38,26 +38,26 @@ const Carousel = () => {
   };
 
   return (
-    <div className="carousel">
+      <div className="carousel">
 
-      <button onClick={previousVideo}>
-        <BiChevronLeft color='#FFF' size={50} />
-      </button>
+        <button onClick={previousVideo}>
+          <BiChevronLeft color='#FFF' size={50} />
+        </button>
 
-      <div className="video-container">
-        <video ref={videoRef} src={videos[currentVideoIndex]} type="video/mp4" onClick={togglePlay} />
-        {!isPlaying ? (
-          <div className="pause-overlay" onClick={togglePlay}>
-            <BiPause color='#FFF' size={100} />
-          </div>
-        ) : null}
+        <div className="video-container">
+          <video ref={videoRef} src={videos[currentVideoIndex]} type="video/mp4" onClick={togglePlay} />
+          {!isPlaying ? (
+            <div className="pause-overlay" onClick={togglePlay}>
+              <BiPause color='#FFF' size={100} />
+            </div>
+          ) : null}
+        </div>
+
+        <button onClick={nextVideo}>
+          <BiChevronRight color='#FFF' size={50} />
+        </button>
+
       </div>
-
-      <button onClick={nextVideo}>
-        <BiChevronRight color='#FFF' size={50} />
-      </button>
-
-    </div>
   );
 };
 

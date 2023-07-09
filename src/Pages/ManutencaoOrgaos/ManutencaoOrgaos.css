@@ -127,6 +127,11 @@
 }
 
 @media (max-width: 910px) {
+    .experience-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }   
+
     .container-all-retangles {
         padding-left: 15px;
         padding-right: 15px;
