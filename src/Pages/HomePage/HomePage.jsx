@@ -15,7 +15,21 @@ import { RiFileDownloadLine } from "react-icons/ri";
 
 import { Link } from 'react-router-dom';
 
+import Certifications from './file/Certificações Claudemir Ferreira.pdf'
+
 export default function HomePage() {
+
+    // const handleDownload = () => {
+    //     const pdfPath = process.env.PUBLIC_URL + './Certificações Claudemir Ferreira.pdf';
+
+    //     const link = document.createElement('a');
+    //     link.href = pdfPath;
+    //     link.download = 'Certificações Claudemir Ferreira.pdf';
+    //     document.body.appendChild(link);
+    //     link.click();
+    //     document.body.removeChild(link);
+    // };
+
     const [hover, setHover] = useState(false)
 
     return (
@@ -36,33 +50,39 @@ export default function HomePage() {
                     <p>Professor, Eletricista e Técnico em Eletrônica (Órgãos)</p>
                     <p>Formado em eletrônica e elétrica pelo SENAI</p>
 
-                    <button
-                        onMouseEnter={() => setHover(true)}
-                        onMouseLeave={() => setHover(false)}
+                    <a
+                        href={Certifications} 
+                        download="Certificações Claudemir Ferreira"
 
-                        className={hover ? "button-type-1-hover" : "button-type-1" }
+                        className={hover ? "button-type-1-hover" : "button-type-1"}
                     >
 
-                        {hover ?
+                        <button
+                            onMouseEnter={() => setHover(true)}
+                            onMouseLeave={() => setHover(false)}
+                        >
 
-                            (
-                                <>
-                                    <RiFileDownloadLine size={26} color="#FFF" />
-                                    <p>Certificações</p>
-                                </>
-                            )
+                            {hover ?
 
-                            :
+                                (
+                                    <>
+                                        <RiFileDownloadLine size={26} color="#FFF" />
+                                        <p>Certificações</p>
+                                    </>
+                                )
 
-                            (
-                                <>
-                                    <RiFileDownloadLine size={26} color="#131673" />
-                                    <p>Certificações</p>
-                                </>
-                            )
-                        }
+                                :
 
-                    </button>
+                                (
+                                    <>
+                                        <RiFileDownloadLine size={26} color="#131673" />
+                                        <p>Certificações</p>
+                                    </>
+                                )
+                            }
+
+                        </button>
+                    </a>
 
                 </div>
 
