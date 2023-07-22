@@ -32,7 +32,8 @@ export default function Header() {
                 <div className="cabecalho-itens" >
                     <Link
                         className="link"
-                        onClick={() => scrollToServices()}
+                        // onClick={() => scrollToServices()}
+                        to="/#services"
                     >
                         Serviços
                     </Link>

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./HomePage.css";
 
 import Foto from "./img/Foto.svg"
@@ -19,18 +19,14 @@ import Certifications from './file/Certificações Claudemir Ferreira.pdf'
 
 export default function HomePage() {
 
-    // const handleDownload = () => {
-    //     const pdfPath = process.env.PUBLIC_URL + './Certificações Claudemir Ferreira.pdf';
-
-    //     const link = document.createElement('a');
-    //     link.href = pdfPath;
-    //     link.download = 'Certificações Claudemir Ferreira.pdf';
-    //     document.body.appendChild(link);
-    //     link.click();
-    //     document.body.removeChild(link);
-    // };
-
     const [hover, setHover] = useState(false)
+
+    useEffect(() => {
+        if (window.location.hash === "#services") {
+            const section = document.getElementById("services");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    }, []);
 
     return (
         <div>
@@ -51,7 +47,7 @@ export default function HomePage() {
                     <p>Formado em eletrônica e elétrica pelo SENAI</p>
 
                     <a
-                        href={Certifications} 
+                        href={Certifications}
                         download="Certificações Claudemir Ferreira"
 
                         className={hover ? "button-type-1-hover" : "button-type-1"}
