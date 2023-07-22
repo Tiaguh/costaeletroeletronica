@@ -89,10 +89,18 @@ export default function HomePage() {
                     <h2>43 anos</h2>
                     <p>Professor, Eletricista e Técnico em Eletrônica (Órgãos)</p>
 
-                    <button className="button-type-1">
-                        <RiFileDownloadLine size={26} color="#131673" />
-                        <p>Certificações</p>
-                    </button>
+
+                    <a
+                        href={Certifications}
+                        download="Certificações Claudemir Ferreira"
+
+                        className="button-response"
+                    >
+                        <button>
+                            <RiFileDownloadLine size={26} color="#131673" />
+                            <p>Certificações</p>
+                        </button>
+                    </a>
 
                 </div>
 
