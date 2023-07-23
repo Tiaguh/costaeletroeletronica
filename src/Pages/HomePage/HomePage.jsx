@@ -133,26 +133,18 @@ export default function HomePage() {
             </div>
 
             <div className="servicos-container-responsive">
-                <div className="servicos-title" >
+                <div className="servicos-title">
                     <h1>Serviços</h1>
                 </div>
 
                 <div className="fotos-container-responsive">
-
-                    <Link
-                        to="/manutenção-orgãos"
-                    >
+                    <Link to="/manutenção-orgãos">
                         <img className="foto-orgao-responsive" src={OrgaoResponsive} />
                     </Link>
-
-                    <Link
-                        to="/manutenção-elétrica"
-                    >
+                    <Link to="/manutenção-elétrica">
                         <img className="foto-fios-responsive" src={FiosResponsive} />
                     </Link>
-
                 </div>
-
             </div>
 
             <Footer />

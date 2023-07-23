@@ -1,22 +1,30 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import "./Header.css"
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 import navbar from './img/navbar.png';
 
 export default function Header() {
     const [visible, setVisible] = useState(false)
 
-    const scrollToServices = () => {
-        const section = document.getElementById('services');
-        section.scrollIntoView({ behavior: 'smooth' });
-    };
-
     const scrollToFooter = () => {
         const section = document.getElementById('footer');
         section.scrollIntoView({ behavior: 'smooth' });
     };
+
+    const scrollToServices = () => {
+        const section = document.getElementById("services");
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
+    useEffect(() => {
+        if (window.location.hash === "#services") {
+            scrollToServices();
+        }
+    }, []);
 
     return (
         <div className="cabecalho-container">
@@ -31,9 +39,9 @@ export default function Header() {
 
                 <div className="cabecalho-itens" >
                     <Link
-                        className="link"
-                        // onClick={() => scrollToServices()}
                         to="/#services"
+                        className="link"
+                        onClick={scrollToServices}
                     >
                         Serviços
                     </Link>
@@ -43,7 +51,8 @@ export default function Header() {
                     <Link
                         className="link"
                         onClick={() => scrollToFooter()}
-                    >Contato
+                    >
+                        Contato
                     </Link>
 
                     <p>|</p>
@@ -81,11 +90,11 @@ export default function Header() {
                     to="/"
                     className="link"
                 >
-                    Serviços
+                    Home
                 </Link>
 
                 <Link
-                    to="/"
+                    onClick={() => scrollToFooter()}
                     className="link"
                 >
                     Contato
