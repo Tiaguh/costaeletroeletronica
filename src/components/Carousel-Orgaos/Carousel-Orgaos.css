@@ -1,11 +1,8 @@
 .carousel {
     width: 100%;
-    max-width: 800px;
 
     display: flex;
     justify-content: center;
-
-    margin: 0 auto;
 
     margin-bottom: 25px;
 }
@@ -23,7 +20,11 @@
 }
 
 .carousel button {
-    width: 50px;
+    width: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: #131673;
 
@@ -45,10 +46,4 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (max-width: 910px) {
-    .carousel button {
-        width: 50px;
-    }
 }
