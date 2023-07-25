@@ -61,7 +61,7 @@ export default function Header() {
                         className="link"
                         to="/manutenção-orgãos"
                     >
-                        Orgãos
+                        Órgãos
                     </Link>
 
                     <p>|</p>
@@ -104,7 +104,7 @@ export default function Header() {
                     to="/manutenção-orgãos"
                     className="link"
                 >
-                    Orgãos
+                    Órgãos
                 </Link>
 
                 <Link

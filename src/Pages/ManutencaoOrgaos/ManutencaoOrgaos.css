@@ -130,7 +130,7 @@
     .experience-container {
         padding-left: 15px;
         padding-right: 15px;
-    }   
+    }
 
     .container-all-retangles {
         padding-left: 15px;
@@ -155,6 +155,10 @@
 
     .rectangle {
         width: 100%;
+    }
+
+    .orgao-container-isolade {
+        justify-content: center;
     }
 }
 

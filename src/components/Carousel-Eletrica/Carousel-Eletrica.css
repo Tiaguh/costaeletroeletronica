@@ -14,7 +14,7 @@
 
 .carousel-imagens img {
     width: 100%;
-    height: 450px;
+    max-height: 400px;
 
     object-fit: contain;
 }
