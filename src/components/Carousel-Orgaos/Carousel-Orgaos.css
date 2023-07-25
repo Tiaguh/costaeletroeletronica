@@ -20,7 +20,7 @@
 }
 
 .carousel button {
-    width: 10%;
+    width: 4%;
 
     display: flex;
     justify-content: center;
@@ -46,4 +46,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 910px) {
+    .carousel button {
+        width: 10%;
+    }
 }
