@@ -29,7 +29,7 @@ export default function Footer() {
 
                         <div className="instagram-container">
                             <img className="instagram-icon" src={Instagram} />
-                            <p>@costa_eletroeletronica</p>
+                            <p>@tecnico.claudemir</p>
                         </div>
                     </div>
                 </div>

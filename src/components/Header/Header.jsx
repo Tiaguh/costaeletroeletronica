@@ -76,7 +76,12 @@ export default function Header() {
             </header>
 
             <header className="cabecalho-responsive">
-                <h1>Costa Elétrica e Eletrônica</h1>
+                <Link
+                    to="/"
+                    className="link"
+                >
+                    <h1>Costa Elétrica e Eletrônica</h1>
+                </Link>
 
                 <button onClick={() => setVisible(!visible)}>
                     <img src={navbar} />

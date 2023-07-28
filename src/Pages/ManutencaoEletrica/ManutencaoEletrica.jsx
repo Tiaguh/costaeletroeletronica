@@ -29,13 +29,23 @@ export default function ManutencaoEletrica() {
                 <div className="container-all-retangles-eletric" >
 
                     <div className="container-retangles-eletric">
-                        <div className="rectangles-eletric">Manutenção elétrica nas academias <br /> Gigants Grin e Aquademia</div>
-                        <div className="rectangles-eletric">Manutenção: Colégio Portal Ideal</div>
-                        <div className="rectangles-eletric">Instalação elétrica nova e <br /> manutenção particulares em várias regiões</div>
+
+                        <div className="rectangles-eletric">
+                            <p>Manutenção elétrica nas academias
+                            Gigants Grin e Aquademia</p>
+                        </div>
+
+                        <div className="rectangles-eletric">
+                            <p>Manutenção: Colégio Portal Ideal</p>
+                        </div>
+                        <div className="rectangles-eletric">
+                            <p>Instalação elétrica nova e</p>
+                            <p>manutenção particulares em várias regiões</p>
+                        </div>
                     </div>
-                    
+
                 </div>
-                
+
                 <div className="title-container">
                     <h2>Conhecimento em elétrica</h2>
                 </div>
